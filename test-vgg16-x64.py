@@ -14,6 +14,7 @@ with tf.device('/GPU:0'):
         image_size=(IMAGE_SIZE, IMAGE_SIZE)
     )
 
-    model = load_model('vgg16/vgg16-x64-checkpoint-100')
+    model = load_model('vgg16-x64-new-checkpoint-100')
+    # model = load_model('vgg16/vgg16-x64-checkpoint-100')
     results = model.evaluate(test_dataset)
     print(results)
