@@ -1,8 +1,5 @@
-from tensorflow.keras.applications.vgg16 import VGG16
 import tensorflow as tf
-from tensorflow.keras.layers import Input, BatchNormalization, GlobalAveragePooling2D, Dropout, Dense, LeakyReLU
 from tensorflow.keras.models import load_model
-from tensorflow.keras.callbacks import ReduceLROnPlateau, EarlyStopping
 
 IMAGE_SIZE = 64
 TEST_DIR = 'xrays-x64/test'
